@@ -5,7 +5,7 @@ We're a team of 6 people working together to ensure vulnerable people can get th
 
 ### Meet our team:
 
-###### Alistair
+###### [Alistair](https://twitter.com/pirrieall)
 ###### [Dan](https://twitter.com/pestodan)
 ###### [Irina](https://twitter.com/IrinaPreda)
 ###### [Khushboo](https://twitter.com/sy2yp)
