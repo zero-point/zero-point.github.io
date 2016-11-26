@@ -1,75 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-<title>Caesar Cipher</title>
-<script type="text/javascript">
-function sayHello() {
-	var selected = document.getElementById('opt');
-	var texta = document.getElementById('textarea').value 
-	//console.log(texta + " " + selected.value + " ")
-	
-	var newt = ""
-	for (var x = 0; x < texta.length; x++){
-    		var c = texta.charAt(x);
-		var d = c.charCodeAt(0)
-		var shift = parseInt(selected.value)
-		var newd = d + shift
-		if(d<91 && newd>90)
-			newd = 64+(newd-90)
-		if(d<123 && newd>122)
-			newd = 96+(newd-122)
-		if(d<65 || d>122 || (d>90 && d<97))
-			newd = d 
-		console.log(newd)
-		newt = newt + String.fromCharCode(newd)
-	}
-	//console.log(newt)
-	document.getElementById("out").innerHTML = newt
-};
-</script>
+  <meta charset="UTF-8">
+  <title>GoogleForce</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-<br>
-<div><strong>   - Caesar Cipher Encrypter -   </strong></div>
-<br>
-<div>
-	<form action="" method="post">
-		<div style="float:left;padding-right:10px;">
-			<textarea name="textarea" id="textarea" onchange="sayHello()" onkeyup="sayHello()" onpaste="sayHello()"  style="width:425px;height:235px"></textarea>
-		</div>
-		<div>Use key:
-			<select name="key" id="opt">
-				<option value="0">0</option>
-				<option value="1">1</option>
-				<option value="2" selected="selected">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-				<option value="16">16</option>
-				<option value="17">17</option>
-				<option value="18">18</option>
-				<option value="19">19</option>
-				<option value="20">20</option>
-				<option value="21">21</option>
-				<option value="22">22</option>
-				<option value="23">23</option>
-				<option value="24">24</option>
-				<option value="25">25</option>
-			</select>
-		</div>
-		<div class="clear"></div>
-	</form>
-	<p><strong>Output:</strong><br><p id="out"></p></p>
-</div>
+  <body></body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
