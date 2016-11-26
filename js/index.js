@@ -306,7 +306,7 @@ var GoogleForce = {};
 			context.font = canvas.width / 8 + 'px Arial';
 			context.fillStyle = 'rgb(255, 255, 255)';		
 			context.textAlign = 'center';
-			context.fillText('Google', canvas.width / 2, canvas.height / 2);
+			context.fillText('I love you', canvas.width / 2, canvas.height / 2);
 			
 			var surface = context.getImageData(0, 0, canvas.width, canvas.height);
 			
