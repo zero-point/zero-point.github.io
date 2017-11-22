@@ -1,27 +1,74 @@
-<!DOCTYPE html>
-<!-- Simble draggable bar chart with 2 bins -->
-<meta charset="utf-8">
-<link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-<link type="text/css" href="./css/main.css?id=2" rel="stylesheet">
+<html>
+<head>
 
+</head>
 <body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<div class="col-md-3 jumbotron instructions">
-  <h3 id="mode"></h3><br/>
-  <p id="judgementCount"><br/></p>
-  <div class="instructionText"></div>
-  <button style="display:none" type="button" class="btn btn-primary btn-block nextScenarioButton">Next</button>
-</div>
-
-<div id="main" class="col-md-9 jumbotron vertical-center">
-</div>
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeMsg()">&times;</a>
-  <div class="overlay-content">
+  <center>
+  <h3>What is Rares saying now?</h3>
+  <div>
+    <img style="height:50%;width:30%;" src="http://i.imgur.com/sJVWbu3.jpg" alt="Einstein"><br/>
+    <button id="request">Click me</button>
+    <div id="bio"></div></center>
   </div>
-</div>
-<script src="js/main.js"></script>
 </body>
+<script>
+(function() {
+
+  'use strict';
+
+  // find the desired selectors
+  var btn = document.getElementById('request');
+  var bio = document.getElementById('bio');
+
+  // set up a request
+  var request = new XMLHttpRequest();
+
+  // keep track of the request
+  request.onreadystatechange = function() {
+    // check if the response data send back to us
+    if(request.readyState === 4) {
+      // add a border
+      bio.style.border = '1px solid #e8e8e8';
+      // uncomment the line below to see the request
+      // console.log(request);
+      // check if the request is successful
+      if(request.status === 200) {
+        // update the HTML of the element
+        bio.innerHTML = request.responseText;
+      } else {
+        // otherwise display an error message
+        bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+      }
+    }
+  }
+
+
+  var http = new XMLHttpRequest();
+  var url = "http://ajax-cyf.eu-west-1.elasticbeanstalk.com/chatroom/?id=cyf";
+  var params = "Hello World";
+/*  http.open("POST", url, true);
+
+  //Send the proper header information along with the request
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  http.onreadystatechange = function() {//Call a function when the state changes.
+      if(http.readyState  == 4 && http.status == 200) {
+          alert(http.responseText);
+      }
+  }
+  http.send(params);*/
+
+  // specify the type of request
+  request.open('GET', 'http://ajax-cyf.eu-west-1.elasticbeanstalk.com/chatroom/?id=cyf');
+
+  // register an event
+  btn.addEventListener('click', function() {
+    // hide the button
+    this.style.display = 'none';
+    // send the request
+    request.send();
+  });
+
+})();
+</script>
 </html>
