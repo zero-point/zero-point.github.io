@@ -1,0 +1,55 @@
+{
+	"versionid": "1.0",
+
+	"old_frontpage": "<br/><h3>Information<br/></h3><br/><div><p>Thank you for choosing to participate in our research.<br/><br/> The goal of this study is to understand how people extrapolate patterns from data, more specifically, data presented through scatter plots and bar charts.  <br/><br/> The runtime of the experiments is approximately 20 minutes and there is a survey at the end. <br/><br/> Please follow the instructions closely and complete all the required steps. </p>   ",
+
+	"frontpage":"",
+
+	"old_old_consentform": "<h3><center>Consent Form<center></h3><br/><div><p> The goal of this study is to understand what patterns people see in data, and how people think those patterns will continue when they are given incomplete information.<br/> <p> This experiment does not collect any personally identifying or sensitive information, and you are free to withdraw at any time.  If you have any comments or questions, do not hesitate to contact Irina Preda (s1143039@ed.ac.uk).<p> In the following screens, you will try to understand some relationships using plots containing data points. <p> All of the relationships come from the same underlying system, so there may be similarities between them. <p> Try to use this information to make better predictions. <p> Based on your understanding of each relationship, you will predict the values of new points. <p> It should only take a few seconds to make each judgment, and there are approximately 6 relationships requiring approximately 40 judgments each. The experiment is expected to take about 20 minutes in all. Also, please take note of the following: <ul><li> There is no single correct pattern in any of the cases you will observe, but your judgments will be reviewed by a human, and your submission may be rejected if it is clear that you did not attempt to find any pattern. </li><li> Once you have submitted a judgment, you will not be able to change it - please do not attempt to use the back button during the experiment. </li> </ul > </div> <hr> <p> To participate, click: <a href =\"train_bar2.html\" > I agree to participate in this study. </a> </p> <p> If you do not wish to participate, please close this window. </p>",
+
+	"old_consentform": "<br><br/><h3>Consent Form<center></h3><br/><div><p> This experiment does not collect any personally identifying or sensitive information, and you are free to withdraw at any time.  If you have any comments or questions, do not hesitate to contact Irina Preda (s1143039@ed.ac.uk).<p> In the following screens, you will be presented with different representations of data. <p> Based on your understanding of each relationship, you will predict the values of new points. <p> It should only take a few seconds to make each judgment, and there are 3 relationships requiring approximately 40 judgments each. </div> <hr> <p> To participate, click: <a onclick=\"startExperiment();return false;\" href =\"javascript:startExperiment();return false;\" > I agree to participate in this study. </a> </p> <p> If you do not wish to participate, please close this window. </p>",
+
+	"consentform": "<h2>Function Learning Experiment<center></h2><br/>Thank you for choosing to participate in our research.<br/><br/> The goal of this study is to understand how people extrapolate patterns from data, more specifically, data presented through scatter plots and bar charts.  <br/><br/> In the following screens, you will be presented with different representations of data. Based on your understanding of each relationship, you will predict the values of new points. Please follow the instructions closely and complete all the required steps.<br/><br/> The runtime of the experiments is approximately 20 minutes and there is a survey at the end. <br/><br/> This experiment does not collect any personally identifying or sensitive information, and you are free to withdraw at any time.<br/><br/> If you have any comments or questions, do not hesitate to contact Irina Preda (s1143039@ed.ac.uk). <hr> To participate, click: <a onclick=\"startExperiment();return false;\" href =\"javascript:startExperiment();return false;\" > I agree to participate in this study. </a><br/><br/> If you do not wish to participate, please close this window.",
+
+	"instructions": {
+		"train-bar":"<br/>Click on the rectangle on the right to select the predicted value, based on the value of the bar on the left.<br/><br/> Hit the 'Space' key to check if your choice is correct.<br/><br/> Hit the 'Enter' key to submit your final choice and move to the next one.</p>",
+		"test-bar":"<br/>Click on the rectangle on the right to select the predicted value, based on the value of the bar on the left.<br/><br/> Hit the 'Enter' key to submit your choice and move to the next one.</p>",
+		"old_bar": "<p>Please predict the new value of the bar on the right, based on the value of the bar on the left.<br/>Hit the 'Space' key to submit each choice.</p>",
+		"old_scatter": "<p>Please predict the new points, based on the points that you can see. <br/>Hit the 'Space' key to submit each choice.</p>",
+		"train-scatter-nomem":"<br/>Please predict try to predict the points, as best as you can. <br/><br/>Hit the 'Space' key to check if your choice is correct. <br/><br/>Hit the 'Enter' key to submit your final choice and move to the next one.",
+		"train-scatter-fullmem":"<br/>Please predict the new points, based on the points that you see. <br/><br/>Hit the 'Space' key to check if your choice is correct. <br/><br/>Hit the 'Enter' key to submit your final choice and move to the next one.",
+		"test-scatter-nomem":"<br/>Please try to predict the points, as best as you can. <br/><br/>Hit the 'Enter' key to submit your choice and move to the next one.",
+		"test-scatter-fullmem":"<br/>Please predict the new points, based on the points that you see. <br/><br/>Hit the 'Enter' key to submit your choice and move to the next one."
+	},
+
+
+	"conclusion": "Thank you for your participation in this study. <br/><br/>Please complete the following short survey regarding your experience using this website. <br/><br/>If you have any comments or questions, please contact Irina Preda (s1143039@ed.ac.uk)",
+
+	"conditions": {
+		"1": {
+			"plot-type": "bar",
+			"function-type": "linear",
+			"xValues": [5, 6, 7, 8, 9, 10],
+			"yValues": [5, 6, 7, 8, 9, 10]
+		},
+		"2": {
+			"plot-type": "scatter",
+			"function-type": "linear",
+			"xValues": [5, 6, 7, 8, 9, 10],
+			"yValues": [5, 6, 7, 8, 9, 10]
+		},
+		"3": {
+			"plot-type": "bar",
+			"function-type": "quadratic",
+			"xValues": [1, 2, 3, 4, 5, 6],
+			"yValues": [1, 4, 9, 16, 25, 36]
+		},
+		"4": {
+			"plot-type": "scatter",
+			"function-type": "quadratic",
+			"xValues": [1, 2, 3, 4, 5, 6],
+			"yValues": [1, 4, 9, 16, 25, 36]
+		}
+	},
+	"_comment": "to add periodic and context related conditions; total conditions: 12"
+}
