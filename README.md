@@ -1,3 +1,3 @@
-#Portfolio website
+# Portfolio website
 
-Can be found at: irinapreda.me
+Can be found at: [irinapreda.me](irinapreda.me)
