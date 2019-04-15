@@ -1,5 +1,5 @@
 # Portfolio website
 
-Can be found at: [irinapreda.me](http://irinapreda.co.uk)
+Can be found at: [irinapreda.co.uk](http://irinapreda.co.uk)
 
 Status: live
